@@ -1,0 +1,7 @@
+mixin text-block(title, description)
+    .text-block
+        h1.text-block__title=title
+        p.text-block__description=description
+
+mixin button(title, color)
+    button(class="buttons-block--"+color)=title

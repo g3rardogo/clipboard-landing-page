@@ -1,0 +1,70 @@
+$primary-color: hsl(171, 66%, 44%);
+$secondary-color: hsl(233, 100%, 69%);
+$primary-text-color: hsl(210, 10%, 33%);
+$secondary-text-color: hsl(201, 11%, 66%);
+$footer-background-color: hsl(204, 12%, 92%);
+
+//Mixins
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size)*1.5;
+}
+
+@mixin margin-section {
+	margin-top: 156px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+//Functions
+@each $header, $size in (h1: 30px, h2: 25px, h3: 20px) {
+	#{$header} {
+		color: $primary-text-color;
+		font-size: $size;
+		margin-bottom: 15px;
+	}
+}
+
+body {
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    @include font-size(18px);
+}
+
+p {
+	color: $secondary-text-color;
+}
+
+.text-block {
+	max-width: 500px;
+	margin: 0 auto 24px auto;
+	padding: 0 16px;
+}
+.buttons-block {
+	max-width: 350px;
+	margin: 0 auto 24px auto;
+	padding: 0 16px;
+	button {
+		color: white;
+		border: none;
+		border-radius: 2em;
+		padding: 20px;
+		width: 100%;
+	}
+	button:nth-child(1) {
+		background-color: $primary-color;
+		border-bottom: 3px outset $primary-color;
+		margin-bottom: 24px;
+	}
+	button:nth-child(2) {
+		background-color: $secondary-color;
+		border-bottom: 3px outset $secondary-color;
+	}
+}
+

@@ -1,0 +1,89 @@
+.about__section {
+    margin-bottom: 24px;
+    text-align: center;
+    .image__container {
+        background-image: url("../src/images/bg-header-mobile.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        img {
+            margin-top: 75px;
+            margin-bottom: 75px;
+        }
+    }
+}
+
+.features__section {
+    @include margin-section;
+    .image__container{
+        padding: 16px;
+        img {
+            margin-top: 46px;
+            margin-bottom: 24px;
+            width: 100%;
+            max-width: 500px
+        }
+    }
+    .text-block {
+        margin-top: 58px;
+    }
+}
+
+.access__section {
+    @include margin-section;
+    .image__container {
+        padding: 16px;
+        img {
+            margin-top: 46px;
+            margin-bottom: 24px;
+            width: 100%;
+            max-width: 500px
+        }
+    }
+}
+
+.tools__section {
+    @include margin-section;
+    margin-top: 46px;
+    .text-block:nth-child(1) {
+        margin-bottom: 24px;
+    }
+    > div:not(:nth-child(1)) {
+        margin-top: 84px;
+    }
+    div img {
+        margin-bottom: 46px;
+    }
+}
+
+.brands__section {
+    @include margin-section;
+    div img {
+        margin-bottom: 72px;
+    }
+}
+
+.download__section {
+    @include margin-section;
+    .text-block {
+        margin-bottom: 46px;
+    }
+}
+
+footer {
+    background-color: $footer-background-color;
+    @include margin-section;
+    margin-bottom: 0;
+    img {
+        margin-top: 46px;
+        margin-bottom: 42px;
+        width: 62px;
+    }
+    h3 {
+        margin-bottom: 32px;
+    }
+    div img {
+        margin: 24px 26px 42px 26px;
+        width: auto;
+    }
+}
