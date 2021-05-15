@@ -28,6 +28,10 @@
             position: relative;
             right: 50px;
         }
+        @include media(more-desktop) {
+            position: static;
+            width: 650px;
+        }
         img {
             margin-top: 46px;
             margin-bottom: 24px;
@@ -52,7 +56,10 @@
     .container {
         @include media(desktop-s) {
             display: flex;
-            align-items: center
+            align-items: center;
+        }
+        @include media(more-desktop) {
+            justify-content: center;
         }
     }
 }
@@ -73,6 +80,10 @@
 .tools__section {
     @include margin-section;
     margin-top: 46px;
+    @include media(more-desktop) {
+        max-width: 1480px;
+        margin: 156px auto 24px auto;
+    }
     .text-block:nth-child(1) {
         margin-bottom: 24px;
     }
@@ -81,8 +92,13 @@
     }
     div img {
         margin-bottom: 46px;
+        width: 42px;
+        height: 34px;
     }
     .container {
+        > div {
+            margin-bottom: 72px;
+        }
         @include media(desktop-s) {
             padding: 0 15px;
             display: flex;
@@ -90,6 +106,7 @@
             align-items: center
         }
     }
+
 }
 
 .brands__section {
@@ -98,6 +115,10 @@
         padding: 0 46px;
         display: flex;
         justify-content: space-between;
+    }
+    @include media(more-desktop) {
+        max-width: 1480px;
+        margin: 156px auto 24px auto;
     }
     div img {
         margin-bottom: 72px;
@@ -119,6 +140,9 @@ footer {
         padding: 46px 46px 0 46px;
         text-align: left;
         display: flex;
+    }
+    @include media(more-desktop) {
+        padding: 46px 100px 0 100px;
     }
     img {
         margin-top: 46px;
