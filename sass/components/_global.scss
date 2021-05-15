@@ -45,22 +45,36 @@ p {
 	max-width: 500px;
 	margin: 0 auto 24px auto;
 	padding: 0 16px;
+	@include media(tablet) {
+		max-width: 700px;		
+	}
 }
 .buttons-block {
 	max-width: 350px;
 	margin: 0 auto 24px auto;
 	padding: 0 16px;
+	@include media(tablet){
+		max-width: 540px;
+		display: flex;
+		justify-content: space-evenly;
+	}
 	button {
 		color: white;
 		border: none;
 		border-radius: 2em;
-		padding: 20px;
+		padding: 14px;
 		width: 100%;
+		@include media(tablet) {
+			max-width: 220px;
+		}
 	}
 	button:nth-child(1) {
 		background-color: $primary-color;
 		border-bottom: 3px outset $primary-color;
 		margin-bottom: 24px;
+		@include media(tablet) {
+			margin-bottom: 0;
+		}
 	}
 	button:nth-child(2) {
 		background-color: $secondary-color;
