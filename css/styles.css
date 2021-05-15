@@ -514,11 +514,11 @@ p {
   }
 }
 .buttons-block button {
-  color: white;
+  width: 100%;
+  padding: 14px;
   border: none;
   border-radius: 2em;
-  padding: 14px;
-  width: 100%;
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .buttons-block button {
@@ -526,9 +526,9 @@ p {
   }
 }
 .buttons-block button:nth-child(1) {
-  background-color: #26baa4;
-  border-bottom: 3px outset #26baa4;
   margin-bottom: 24px;
+  border-bottom: 3px outset #26baa4;
+  background-color: #26baa4;
 }
 @media only screen and (min-width: 768px) {
   .buttons-block button:nth-child(1) {
@@ -536,8 +536,8 @@ p {
   }
 }
 .buttons-block button:nth-child(2) {
-  background-color: #6173ff;
   border-bottom: 3px outset #6173ff;
+  background-color: #6173ff;
 }
 
 .about__section {
@@ -570,23 +570,23 @@ p {
 }
 @media only screen and (min-width: 992px) {
   .features__section .image__container {
-    padding: 0;
     width: 850px;
+    padding: 0;
     position: relative;
     right: 50px;
   }
 }
 @media only screen and (min-width: 1480px) {
   .features__section .image__container {
-    position: static;
     width: 650px;
+    position: static;
   }
 }
 .features__section .image__container img {
-  margin-top: 46px;
-  margin-bottom: 24px;
   width: 100%;
   max-width: 500px;
+  margin-top: 46px;
+  margin-bottom: 24px;
 }
 @media only screen and (min-width: 992px) {
   .features__section .image__container img {
@@ -599,8 +599,8 @@ p {
 }
 @media only screen and (min-width: 992px) {
   .features__section .wrap > .text-block {
-    text-align: left;
     margin: 0 46px 46px 46px;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -630,10 +630,10 @@ p {
   padding: 16px;
 }
 .access__section .image__container img {
-  margin-top: 46px;
-  margin-bottom: 24px;
   width: 100%;
   max-width: 500px;
+  margin-top: 46px;
+  margin-bottom: 24px;
 }
 
 .tools__section {
@@ -655,9 +655,9 @@ p {
   margin-top: 84px;
 }
 .tools__section div img {
-  margin-bottom: 46px;
   width: 42px;
   height: 34px;
+  margin-bottom: 46px;
 }
 .tools__section .container > div {
   margin-bottom: 72px;
@@ -722,10 +722,10 @@ footer {
 @media only screen and (min-width: 992px) {
   footer {
     padding: 46px 46px 0 46px;
-    text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 1480px) {
@@ -734,24 +734,24 @@ footer {
   }
 }
 footer img {
+  width: 62px;
   margin-top: 46px;
   margin-bottom: 42px;
-  width: 62px;
 }
 @media only screen and (min-width: 992px) {
   footer img {
-    margin: 0;
     width: 60px;
     height: 60px;
+    margin: 0;
   }
 }
 footer h3 {
   margin-bottom: 32px;
 }
 footer div img {
-  margin: 24px 26px 42px 26px;
   width: auto;
   height: auto;
+  margin: 24px 26px 42px 26px;
 }
 @media only screen and (min-width: 992px) {
   footer .links__container {
