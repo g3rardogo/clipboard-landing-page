@@ -2,66 +2,48 @@ extend components/template.pug
 block content
     main
         section.about__section
-            .image__container: img(src="../src/icons/logo.svg")
-            +text-block("A history of everything you copy", "Clipboard allows you to track and organize everything you copy. Instaly access your clipboard on all your devices.")
+            .image__container: img(src="../src/icons/logo.svg" alt="Clipboard logo")
+            +text-block("A history of everything you copy", "Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.")
             .buttons-block
                 +button("Download for iOS", "green")
                 +button("Download for Mac", "blue")
         section.features__section
-            +text-block("Keep track of your snippets", "Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets inmmediatly on all your devices. Our Mac and iOS apps will help you organize everything.")
+            +text-block("Keep track of your snippets", "Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.")
             .container
-                .image__container: img(src="../src/images/image-computer.png")
+                .image__container: img(src="../src/images/image-computer.png" alt="")
                 .wrap
-                    +text-block("Quick Search", "Easily search your snippets by content, category, web addess, application, and more.")
-                    +text-block("iCloud Sync", "Instanly saves and syncs snippets across all your devices.")
+                    +text-block("Quick Search", "Easily search your snippets by content, category, web address, application, and more.")
+                    +text-block("iCloud Sync", "Instantly saves and syncs snippets across all your devices.")
                     +text-block("Complete History", "Retrieve any snippets from the first moment you started using the app.")
         section.access__section
             +text-block("Access Clipboard Anywhere", "Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.")
-            .image__container: img(src="../src/images/image-devices.png")
+            .image__container: img(src="../src/images/image-devices.png" alt="")
         section.tools__section
             +text-block("Supercharge your workflow", "We've got the tools to boost your productivity.")
             .container
                 div
-                    img(src="../src/icons/icon-blacklist.svg")
+                    img(src="../src/icons/icon-blacklist.svg" alt="")
                     +text-block("Create blacklists", "Ensure sensitive information never makes its way to your clipboard by excluding certain sources.")
                 div
-                    img(src="../src/icons/icon-text.svg")
+                    img(src="../src/icons/icon-text.svg" alt="")
                     +text-block("Plain text snippets", "Remove unwanted formatting from copied text for a consistent look.")
                 div
-                    img(src="../src/icons/icon-preview.svg")
+                    img(src="../src/icons/icon-preview.svg" alt="")
                     +text-block("Sneak preview", "Quick preview of all snippets on your Clipboard for easy access.")
         section.brands__section
             div
-                img(src="../src/images/logo-google.png")
+                img(src="../src/images/logo-google.png" alt="Google logo")
             div
-                img(src="../src/images/logo-ibm.png")
+                img(src="../src/images/logo-ibm.png" alt="IBM logo")
             div
-                img(src="../src/images/logo-microsoft.png")
+                img(src="../src/images/logo-microsoft.png" alt="Microsoft logo")
             div
-                img(src="../src/images/logo-hp.png")
+                img(src="../src/images/logo-hp.png" alt="HP Logo")
             div
-                img(src="../src/images/logo-vector-graphics.png")
+                img(src="../src/images/logo-vector-graphics.png" alt="Vector Graphics logo")
         section.download__section
             +text-block("Clipboard for iOS and Mac OS", "Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you.re ready to start adding to your clipboard.")
             .buttons-block
                 +button("Download for iOS", "green")
                 +button("Download for Mac", "blue")
-    footer
-        img(src="../src/icons/logo.svg")
-        .links__container
-            a(href="/")
-                h3 FAQs
-            a(href="/")
-                h3 Contact Us
-        .links__container
-            a(href="/")
-                h3 Privacy Policy
-            a(href="/")
-                h3 Press Kit
-        .links__container
-            a(href="/")
-                h3 Install Guide
-        .social-media__container
-            img(src="../src/icons/icon-facebook.svg")
-            img(src="../src/icons/icon-twitter.svg")
-            img(src="../src/icons/icon-instagram.svg")
+    include ./components/footer.pug

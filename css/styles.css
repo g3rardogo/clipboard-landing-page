@@ -550,12 +550,16 @@ p {
   }
 }
 .about__section .image__container {
+  width: 100%;
+  height: auto;
   background-image: url("../src/images/bg-header-mobile.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .about__section .image__container img {
+  width: 125px;
+  height: 125px;
   margin-top: 75px;
   margin-bottom: 75px;
 }
@@ -584,6 +588,7 @@ p {
 }
 .features__section .image__container img {
   width: 100%;
+  height: auto;
   max-width: 500px;
   margin-top: 46px;
   margin-bottom: 24px;
@@ -631,6 +636,7 @@ p {
 }
 .access__section .image__container img {
   width: 100%;
+  height: auto;
   max-width: 500px;
   margin-top: 46px;
   margin-bottom: 24px;
@@ -700,6 +706,8 @@ p {
   }
 }
 .brands__section div img {
+  width: auto;
+  height: auto;
   margin-bottom: 72px;
 }
 
@@ -735,6 +743,7 @@ footer {
 }
 footer img {
   width: 62px;
+  height: 62px;
   margin-top: 46px;
   margin-bottom: 42px;
 }
