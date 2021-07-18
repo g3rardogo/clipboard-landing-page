@@ -1,6 +1,6 @@
 # Frontend Mentor - Clipboard landing page solution
 
-https://wakatime.com/badge/github/g3rardogo/clipboard-landing-page.svg
+[![wakatime](https://wakatime.com/badge/github/g3rardogo/clipboard-landing-page.svg)](https://wakatime.com/badge/github/g3rardogo/clipboard-landing-page)
 
 ![](./screenshot.jpg)
 
